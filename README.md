@@ -129,7 +129,6 @@
 <br>
 <br>
 <br>
-<p>
 
 ## Generative Dog Images Kaggle 2019
 
