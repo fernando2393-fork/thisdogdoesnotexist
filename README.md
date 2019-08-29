@@ -105,12 +105,31 @@
     <img src="images/image_00081.png">
     <img src="images/image_00082.png">
   </div> 
+  <div class="column">
+    <img src="images/image_00083.png">
+    <img src="images/image_00084.png">
+    <img src="images/image_00085.png">
+    <img src="images/image_00086.png">
+    <img src="images/image_00087.png">
+    <img src="images/image_00088.png">
+    <img src="images/image_00089.png">
+  </div>
+  <div class="column">
+    <img src="images/image_00090.png">
+    <img src="images/image_00091.png">
+    <img src="images/image_00092.png">
+    <img src="images/image_00093.png">
+    <img src="images/image_00094.png">
+    <img src="images/image_00095.png">
+  </div> 
   
 </div>
+
 
 <br>
 <br>
 <br>
+<p>
 
 ## Generative Dog Images Kaggle 2019
 
@@ -131,6 +150,7 @@ Can you tell which are real vs. generated?
 
 *Trick question; they are all generated!*
 
+You can find more information about the competition in the [official website](https://www.kaggle.com/c/generative-dog-images) and [download the original data](https://www.kaggle.com/c/generative-dog-images/data) if you want to reproduce results.
 
 <br>
 
