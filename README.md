@@ -108,7 +108,7 @@
   
 </div>
 
-
+<br>
 <br>
 <br>
 
@@ -131,6 +131,8 @@ Can you tell which are real vs. generated?
 
 *Trick question; they are all generated!*
 
+
+<br>
 
 ## Contributors 
 
