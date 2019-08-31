@@ -1,145 +1,83 @@
 
-<!doctype html>
+<!DOCTYPE html>
+
+<!-- Designed by Fernando García Sanz -- https://github.com/fernando2393 -->
 
 <html>
 
   <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>FakeDogs</title>
   </head>
 
-  <body>
+  <body onload="generateDogs()">
+
+      <header>
+        <button class="help" id="myBtn" type="button">Help</button>
+        </header>
     <center>
-    <h1>These dogs don't exist.</h1>
-    <h3>Generative Dog Images Kaggle 2019</h3>
+
+      <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close"></span>
+      <h2>Generative Dog Images Kaggle 2019</h2>
+      <br>
+      <p>This project has as objective the generation of dogs' images, by means of machine learning techniques,
+        which do not exist in real life.
+      </p>
+    </div>
+  
+  </div>
+
+    <div class="box">
+        <h1>These Dogs Don't Exist</h1>
+        <h3>Generative Dog Images Kaggle 2019</h3>
+    </div>
     <br><br>
-    <div class="row"> 
-      <div class="column">
-        <img src="images/image_00000.png">
-        <img src="images/image_00001.png">
-        <img src="images/image_00002.png">
-        <img src="images/image_00003.png">
-        <img src="images/image_00004.png">
-        <img src="images/image_00005.png">
-        <img src="images/image_00006.png">
-        <img src="images/image_00007.png">
-        <img src="images/image_00008.png">
-        <img src="images/image_00009.png">
-        <img src="images/image_00010.png">
+      
+      <img id="dogPicture" src="">
+
+    <br>
+    <div class="row">
+      <div class="column" id="column1">
+        <img id="pic00" src="">
+        <img id="pic01" src="">
+        <img id="pic02" src="">
+        <img id="pic03" src="">
       </div>
-      <div class="column">
-        <img src="images/image_00011.png">
-        <img src="images/image_00012.png">
-        <img src="images/image_00013.png">
-        <img src="images/image_00014.png">
-        <img src="images/image_00015.png">
-        <img src="images/image_00016.png">
-        <img src="images/image_00017.png">
-        <img src="images/image_00018.png">
-        <img src="images/image_00019.png">
-        <img src="images/image_00020.png">
-        <img src="images/image_00021.png">
-      </div> 
-      <div class="column">
-        <img src="images/image_00022.png">
-        <img src="images/image_00023.png">
-        <img src="images/image_00024.png">
-        <img src="images/image_00025.png">
-        <img src="images/image_00026.png">
-        <img src="images/image_00027.png">
-        <img src="images/image_00028.png">
-        <img src="images/image_00029.png">
-        <img src="images/image_00030.png">
-        <img src="images/image_00031.png">
-        <img src="images/image_00032.png">
+      <div class="column" id="column2">
+        <img id="pic10" src="">
+        <img id="pic11" src="">
+        <img id="pic12" src="">
+        <img id="pic13" src="">
       </div>
-      <div class="column">
-        <img src="images/image_00033.png">
-        <img src="images/image_00034.png">
-        <img src="images/image_00035.png">
-        <img src="images/image_00036.png">
-        <img src="images/image_00037.png">
-        <img src="images/image_00038.png">
-        <img src="images/image_00039.png">
-        <img src="images/image_00040.png">
-        <img src="images/image_00041.png">
-        <img src="images/image_00042.png">
-        <img src="images/image_00043.png">
+      <div class="column" id="column3">
+        <img id="pic20" src="">
+        <img id="pic21" src="">
+        <img id="pic22" src="">
+        <img id="pic23" src="">
       </div>
-      <div class="column">
-        <img src="images/image_00044.png">
-        <img src="images/image_00045.png">
-        <img src="images/image_00046.png">
-        <img src="images/image_00047.png">
-        <img src="images/image_00048.png">
-        <img src="images/image_00049.png">
-        <img src="images/image_00050.png">
-        <img src="images/image_00051.png">
-        <img src="images/image_00052.png">
-        <img src="images/image_00053.png">
-        <img src="images/image_00054.png">
-      </div>
-      <div class="column">
-        <img src="images/image_00055.png">
-        <img src="images/image_00056.png">
-        <img src="images/image_00057.png">
-        <img src="images/image_00058.png">
-        <img src="images/image_00059.png">
-        <img src="images/image_00060.png">
-        <img src="images/image_00061.png">
-        <img src="images/image_00062.png">
-        <img src="images/image_00063.png">
-        <img src="images/image_00064.png">
-        <img src="images/image_00065.png">
-      </div>
-      <div class="column">
-        <img src="images/image_00068.png">
-        <img src="images/image_00069.png">
-        <img src="images/image_00070.png">
-        <img src="images/image_00071.png">
-        <img src="images/image_00072.png">
-        <img src="images/image_00073.png">
-        <img src="images/image_00074.png">
-        <img src="images/image_00075.png">
-        <img src="images/image_00076.png">
-        <img src="images/image_00077.png">
-        <img src="images/image_00078.png">
-      </div>
-      <div class="column">
-        <img src="images/image_00079.png">
-        <img src="images/image_00080.png">
-        <img src="images/image_00081.png">
-        <img src="images/image_00082.png">
-        <img src="images/image_00083.png">
-        <img src="images/image_00084.png">
-        <img src="images/image_00085.png">
-        <img src="images/image_00086.png">
-        <img src="images/image_00087.png">
-        <img src="images/image_00088.png">
-        <img src="images/image_00089.png">
-      </div>
-      <div class="column">
-        <img src="images/image_00090.png">
-        <img src="images/image_00091.png">
-        <img src="images/image_00092.png">
-        <img src="images/image_00093.png">
-        <img src="images/image_00094.png">
-        <img src="images/image_00095.png">
-        <img src="images/image_00096.png">
-        <img src="images/image_00097.png">
-        <img src="images/image_00098.png">
-        <img src="images/image_00099.png">
-        <img src="images/image_00066.png">
+      <div class="column" id="column4">
+        <img id="pic30" src="">
+        <img id="pic31" src="">
+        <img id="pic32" src="">
+        <img id="pic33" src="">
       </div>
     </div>
-    <br>
-    <button type="button">Generate new dogs!</button>
-    <br><br><br>
-    <h2>Contributors</h2>
-    <a href="https://www.kaggle.com/jesucristo">Nanashi</a>
-    <a href="https://www.kaggle.com/tikutiku">Tom</a>
+    <button id="genButton" type="button" onclick="generateDogs()">Generate new dogs!</button>
 
   </center>
+  <footer>
+    Made by:  <a href="https://www.kaggle.com/jesucristo">Nanashi</a>
+    <a href="https://www.kaggle.com/tikutiku">Tom</a>
+  </footer>
   </body>
+
+  <script src="functions.js"></script>
 </html>
-
-
