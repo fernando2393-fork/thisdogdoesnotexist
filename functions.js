@@ -2,8 +2,8 @@ function generateDogs(){
 
     var numbers = []; 
 
-    for(var i = 0; i < 4; i++){
-        for(var j = 0; j < 4; j++){
+    for(var i = 0; i < 7; i++){
+        for(var j = 0; j < 7; j++){
 
             var random = Math.floor(Math.random() * 10) + "" + Math.floor(Math.random() * 10);
             
